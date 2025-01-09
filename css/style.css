@@ -15,8 +15,8 @@
     position: absolute;
     left: -50vw;
     background: blue;
-    -webkit-animation: slide 10s forwards infinite;
-    animation: slide 10s forwards infinite;
+    -webkit-animation: slide 120s forwards infinite;
+    animation: slide 120s forwards infinite;
 }
 
 @keyframes slide {
@@ -42,7 +42,7 @@ h1 {
     margin: 2rem 0;
 
 }
-li {
-    font-size: 1.5rem;
+p {
+    font-size: 2rem;
     margin-left: 2rem;
 }

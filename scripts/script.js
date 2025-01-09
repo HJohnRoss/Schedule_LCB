@@ -11,12 +11,11 @@ function updateText() {
             const lines = res.split('\n');
             for(i = 0; i < lines.length; i++) {
                 if(i === 0) {
-                    container.innerHTML += `<h1>${lines[i]}</h1><ul>`
+                    container.innerHTML += `<h1>${lines[i]}</h1>`
                 } else {
-                    container.innerHTML += `<li>${lines[i]}</li>`
+                    container.innerHTML += `<p>${lines[i]}</p>`
                 }
             }
-            container.innerHTML += "</li>"
         })
         .catch(err => console.log(err))
 }
@@ -29,5 +28,5 @@ function removeId() {
     console.log("test")
 }
 updateText();
-setInterval(updateText, 10000)
-setInterval(removeId, 10000)
+setInterval(updateText, 120000)
+setInterval(removeId, 120000)
