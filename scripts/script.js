@@ -5,7 +5,8 @@ function updateText() {
     while(container.firstChild) {
         container.firstChild.remove();
     }
-    fetch("https://hjohnross.github.io/Schedule_json_LCB/test.txt")
+    // if you make a new file change below to the link
+    fetch("https://hjohnross.github.io/Schedule.txt_LCB/schedule.txt")
         .then(response => response.text())
         .then(res => {
             const lines = res.split('\n');
